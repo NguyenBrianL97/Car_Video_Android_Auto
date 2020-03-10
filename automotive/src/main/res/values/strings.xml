@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Car Video App</string>
+    <string name="playButton_name">PLAY</string>
+</resources>
