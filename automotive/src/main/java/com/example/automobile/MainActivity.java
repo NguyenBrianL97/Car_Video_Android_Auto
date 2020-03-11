@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         playButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "DEMO BUTTON PRESSED", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "NEW COMMIT", Toast.LENGTH_LONG).show();
             }
         });
 
