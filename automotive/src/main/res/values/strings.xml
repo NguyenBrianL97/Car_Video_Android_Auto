@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Car Video App</string>
     <string name="playButton_name">PLAY</string>
+    <string name="media_url_mp3">https://storage.googleapis.com/exoplayer-test-media-0/play.mp3</string>
 </resources>
