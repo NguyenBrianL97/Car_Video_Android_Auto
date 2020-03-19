@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private boolean playWhenReady = true;
     private long playbackPosition = 0;
     private int currentWindow = 0;
-    private EditText result;
+    //private Uri uri = Uri.parse(getString(R.string.media_url_dash));
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
 
         playbackStateListener = new PlaybackStateListener();
         playerView = findViewById(R.id.video_view);
-        result = (EditText) findViewById(R.id.editTextResult);
     }
 
     private void initializePlayer() {
@@ -189,15 +188,17 @@ public class MainActivity extends AppCompatActivity {
                             public void onClick(DialogInterface dialog,int id) {
                                 // get user input and set it to result
                                 // edit text
-                                result.setText(userInput.getText());
-                            }
-                        })
-                .setNegativeButton("Cancel",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                dialog.cancel();
+
+                                String buffer = null;
+                                buffer=userInput.getText().toString();
+                                //uri=Uri.parse(buffer);
+
+                                initializePlayer();
+
+                                //result.setText(userInput.getText());
                             }
                         });
+
 
         // create alert dialog
         AlertDialog alertDialog = alertDialogBuilder.create();
